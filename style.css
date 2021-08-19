@@ -1,0 +1,398 @@
+.clearfix:after {
+  content: " ";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+* {
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+  font-stretch: condensed !important;
+  letter-spacing: normal;
+}
+
+@media (max-width: 1200px) {
+  .large-social {
+    display: none !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .small-social {
+    display: none !important;
+  }
+}
+
+@media (min-width: 992px) {
+  #side-nav-btn {
+    display: none !important;
+  }
+  hr {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 992px) {
+  .article-text {
+    display: none !important;
+  }
+  h2 {
+    font-size: 24px !important;
+  }
+  h4 {
+    font-size: 18px !important;
+  }
+}
+
+@media (min-width: 767px) {
+  hr {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 645px) {
+  hr {
+    margin-top: 0;
+  }
+  h2 {
+    font-size: 24px !important;
+  }
+  h4 {
+    font-size: 16px !important;
+  }
+  h6 {
+    font-size: 14px !important;
+  }
+  .sm-main-image {
+    width: 100vw !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding: 0 !important;
+  }
+  .sm-main-article {
+    width: 100vw !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding: 10px !important;
+  }
+}
+
+html {
+  overflow-x: hidden !important;
+}
+
+body,
+a,
+#main {
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+#nav {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: bold;
+  position: absolute;
+  left: 80px;
+  top: 2rem;
+}
+
+.button-nav {
+  border: none;
+  background-color: white;
+  color: black;
+  padding: 5px 5px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+  border-radius: 8px;
+  margin: 4px 2px;
+  transition: 0.1s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button-nav:hover {
+  background: #f2f2f2;
+  border: none;
+  color: black;
+}
+
+.button-nav:focus {
+  outline-style: none;
+}
+
+#logo {
+  width: 2.5rem;
+  height: 2.5rem;
+  top: 1.5rem;
+  left: 2rem;
+  position: absolute;
+}
+
+a:link {
+  color: black;
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+  font-style: none;
+}
+
+a:hover {
+  color: black;
+}
+
+a:active {
+  color: black;
+  text-decoration: none;
+}
+
+#language {
+  box-shadow: 5px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  text-align: left;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 14px;
+  color: black;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #109c91;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+.date {
+  font-weight: lighter;
+  font-size: 13px;
+}
+
+.aspectRatioBox {
+  padding-top: calc(2 / 3 * 100%);
+  background-size: cover;
+  background-position: center;
+  max-width: 100%;
+}
+
+.small-social {
+  border: 2px solid #c0c0c0;
+  border-radius: 10px;
+  display: block;
+  text-align: center;
+  justify-self: center;
+  padding: 10px;
+  width: 75%;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.large-social {
+  border: 2px solid #c0c0c0;
+  border-radius: 10px;
+  text-align: center;
+  height: 100%;
+  padding: 10px;
+  justify-content: center;
+}
+.socialFollow__icons {
+  box-sizing: inherit;
+  display: inline-flex;
+  justify-items: center;
+  line-height: 1.5;
+}
+
+.socialFollow__link {
+  line-height: 1.5;
+  padding: 5px;
+}
+
+.article-title {
+  font-weight: bold;
+  line-height: 1.1;
+}
+
+.article-text {
+  margin-top: -10px;
+  line-height: 1.3;
+}
+
+.hosts-top {
+  background-color: black;
+  color: white;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: 0;
+  margin-left: 0;
+  max-width: 2000px;
+}
+
+.hosts {
+  color: white;
+  background-color: black;
+  height: auto;
+  padding-top: 23px;
+  padding-bottom: 23px;
+  overflow: auto;
+}
+
+.hosts-box {
+  color: white;
+  background-color: #222;
+  height: 75%;
+  font-size: 12px;
+  font-weight: bold;
+  max-width: 100%;
+  padding: 0px;
+  border-radius: 15px;
+  line-height: 1.667;
+  margin: 5px !important;
+}
+
+.aspectRatioBox-host {
+  padding-top: calc(450 / 317 * 100%);
+  background-size: 100%;
+  border-radius: 15px;
+  max-width: 100%;
+}
+
+.host-desc {
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.button-host {
+  background-color: black;
+  color: white;
+  border-radius: 12px;
+  border: 1px solid;
+  padding: 10px 10px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+  margin: 8px;
+  transition: 0.1s;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.host-btn-holder {
+  position: relative;
+  float: right;
+  padding-top: 75px;
+  right: 10px;
+}
+
+.button-host:hover {
+  background: #f2f2f2;
+  border: none;
+  color: black;
+}
+
+.host-btn-holder-sm {
+  padding-top: 50px;
+}
+
+.button-cat {
+  border-radius: 50px;
+  background-color: white;
+  border: 1px solid grey;
+  padding: 8px 16px;
+  margin-right: 10px;
+  font-size: 12px;
+}
+
+.button-cat-hold {
+  list-style: none;
+  justify-content: left;
+}
+
+.cat-header {
+  padding-left: 40px;
+}
+
+.button-cat:hover {
+  border-color: black;
+}
+
+.button-cat:focus {
+  outline: none !important;
+  border: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+.footer-box {
+  background-color: #f7f7f7;
+  padding-top: 30px;
+  font-size: 12px;
+  line-height: 1.667;
+  color: grey;
+  width: 100%;
+  max-width: 2000px;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.disclaimer-box {
+  width: 50%;
+}
+
+.legal-stuff {
+  vertical-align: middle;
+  margin-left: 30px;
+}
+
+.legal-icon {
+  padding-left: 30px;
+}
+
+.news-headline {
+  margin-left: 50px;
+}
+
+.news-container {
+  padding-left: 50px;
+}
